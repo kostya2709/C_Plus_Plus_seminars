@@ -2,8 +2,10 @@
 #include <iostream>
 #include <vector>
 
+
 int main() {
-	std::vector<int> data = {1, 2, 3, 4, 5};
+	
+	std::vector<int> data = {1, 2, 3, 4, 5};	
 	std::cout << data.front() << "\n";
 	std::cout << data.back() << "\n";
 
@@ -14,6 +16,7 @@ int main() {
 	for (size_t i = 0; i != data.size(); ++i) {
     	std::cout << data[i] << " ";
 	}
+
 	std::cout << '\n';
 
 	int x = 0;

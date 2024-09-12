@@ -10,7 +10,8 @@ int main() {
 
     for (int elem : data) {
         std::cout << elem << " ";
-    }
+	}
+
     std::cout << '\n';
 
 	for (std::string elem : v3) {
