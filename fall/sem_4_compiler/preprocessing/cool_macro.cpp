@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define PRINT(smth) std::cout << smth << '\n'
+#define PRINT(smth) std::cout << smth << '\n';
 
 #define ASSERT( cond )                                           \
     if ( !(cond) ) {                                             \
@@ -17,7 +17,7 @@ int main() {
     
     ASSERT(a == b);
 
-    PRINT( a );
+    PRINT( a )
     
     std::cout << "Finished the program\n";
     return 0;

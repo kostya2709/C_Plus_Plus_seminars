@@ -3,7 +3,6 @@
 #define decode(s,t,u,m,p,e,d) m ## s ## u ## t
 #define begin decode(a,n,i,m,a,t,e)
 
-int begin()
-{
+int begin() {
     printf("Stumped?\n");
 }
