@@ -1,6 +1,7 @@
 #include <iostream>
 #include <compare>
 
+
 class ComplexNumber {
 
 public:
@@ -45,8 +46,15 @@ public:
         return tmp;
     }
 
+    const int& operator[](size_t idx) const {
+        return data[idx];
+    }
+
+    int& operator[](size_t idx) {
+        return data[idx];
+    }
     
-    explicit operator bool()
+    explicit operator bool() const
     {
         return u || v;
     }
@@ -122,6 +130,7 @@ ComplexNumber operator+(ComplexNumber lhs, const ComplexNumber& rhs)
 // bool operator>=(const ComplexNumber& lhs, const ComplexNumber& rhs) const {
 //     return (lhs > rhs) || (lhs == rhs);
 // }
+
 
 std::ostream& operator<<(std::ostream& os, const ComplexNumber& val) {
     return os << val.u << " + i * " << val.v;
