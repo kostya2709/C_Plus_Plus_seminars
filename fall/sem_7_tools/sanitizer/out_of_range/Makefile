@@ -1,4 +1,4 @@
 
 all:
-	g++ -fsanitize=address main.cpp
+	g++ -g -fsanitize=address main.cpp
 	./a.out

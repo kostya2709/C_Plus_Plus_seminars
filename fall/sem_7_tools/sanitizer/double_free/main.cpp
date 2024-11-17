@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main()
-{
+int main() {
     size_t N = 10;
     int* array = new  int[N];
 
