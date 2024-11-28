@@ -1,7 +1,6 @@
 #include <iostream>
 
 struct Base {
-
 	virtual void foo() {
 		std::cout << "Base::foo()\n";
 	}

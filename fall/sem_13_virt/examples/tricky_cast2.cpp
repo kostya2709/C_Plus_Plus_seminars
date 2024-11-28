@@ -22,9 +22,11 @@ struct Dad : virtual Granny {
 };
 
 struct Son : Mom, Dad {
+
 	void foo() {
 
 	}
+
 	int son_int = 3;
 };
 

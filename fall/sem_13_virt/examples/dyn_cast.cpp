@@ -31,6 +31,6 @@ int main() {
 	if (d_new2) {
 		d_new2->foo();
 	} else {
-		std::cout << "Not Derived :(";
+		std::cout << "Not Descendant :(\n";
 	}
 }

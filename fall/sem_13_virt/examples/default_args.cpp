@@ -1,4 +1,4 @@
-#include <iostream>
+include <iostream>
 
 struct Base {
     virtual void foo(int x = 1) {

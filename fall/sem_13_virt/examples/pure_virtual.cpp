@@ -10,10 +10,11 @@ struct Base {
 };
 
 struct Derived: Base {
+
 	void foo() {
 		std::cout << "Derived::foo()\n";
 	}
-	
+
 	void bar() {
 		std::cout << "Derived::bar()\n";
 	}
@@ -27,6 +28,6 @@ int main() {
 	b_ptr->foo();
 	b_ptr->bar();
 
-	// Base b;
+//	Base b;
 
 }

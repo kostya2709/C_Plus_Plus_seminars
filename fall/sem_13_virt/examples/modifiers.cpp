@@ -2,7 +2,7 @@
 
 struct Base {
 
-	virtual void foo() /*const*/ {
+	virtual void foo() {
 		std::cout << "Base::foo()\n";
 	}
 	

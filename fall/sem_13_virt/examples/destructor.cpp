@@ -1,12 +1,13 @@
 #include <iostream>
 
 class Base {
+
 public:
 	virtual void foo() {
 
 	}
 
-	~Base() {
+	~Base()  {
 		std::cout << "Base::~Base\n";
 	}
 };

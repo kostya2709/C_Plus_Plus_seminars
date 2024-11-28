@@ -10,6 +10,7 @@ struct Base {
 struct Derived: Base {
 	void override() override {
 		int override = 0;
+		double final = 0;
 		std::cout << "Derived::override()\n";
 	}
 };

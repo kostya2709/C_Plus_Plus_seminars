@@ -26,10 +26,11 @@ int main() {
 	Son son;
 	Mom* mom = &son;
 	
-	// Dad* dad = mom;
-	// Dad* dad = static_cast<Dad*>(mom);
-	// Dad* dad = reinterpret_cast<Dad*>(mom);
-	Dad* dad = dynamic_cast<Dad*>(mom);
+//	Dad* dad = mom;
+//	Dad* dad = static_cast<Dad*>(mom);
+//	Dad* dad = reinterpret_cast<Dad*>(mom);
+//	Dad* dad = &son;
+//	Dad* dad = dynamic_cast<Dad*>(mom);
 
 	dad->foo();
 	std::cout << dad->dad_field << '\n';

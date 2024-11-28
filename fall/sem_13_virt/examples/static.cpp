@@ -22,6 +22,7 @@ struct Derived: Base {
 };
 
 int main() {
+	Base::foo();
 
 	Derived d;
 	Base* b_ptr = &d;
