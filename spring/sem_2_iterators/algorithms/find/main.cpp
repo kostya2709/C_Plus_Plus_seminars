@@ -18,7 +18,8 @@ int main() {
     seq.push_back( 7);
     seq.push_back( 5);
 
-    std::list<int>::iterator it = find( seq.begin(), seq.end(), 5);
+
+    std::list<int>::iterator it = my_find( seq.begin(), seq.end(), 5);
 
     if ( it != seq.end() ) {
         std::cout << "Found!\n";

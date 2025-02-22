@@ -2,11 +2,11 @@
 #include <map>
 #include <unordered_map>
 
-void iterate_basic( const std::map<int, char>& dict) {
+void iterate_basic( std::map<int, char>& dict) {
 
 	std::cout << "iterate basic:\n";
-    for ( std::map<int, char>::const_iterator it = dict.begin(); it != dict.end(); ++it) {
-        std::cout << it->first << " " << it->second << std::endl;
+    for ( std::map<int, char>::iterator it = dict.begin(); it != dict.end(); ++it) {
+		std::cout << it->first << " " << it->second << std::endl;
     }
 	std::cout << "\n\n";
 }
@@ -25,7 +25,7 @@ void iterate_type( std::map<int, char>& dict) {
 
 	std::cout << "iterate type:\n";
     for ( std::map<int, char>::iterator it = dict.begin(); it != dict.end(); ++it) {
-        std::cout << std::get<const int>(*it) << " " << std::get<char>(*it) << std::endl;
+        std::cout << std::get<int>(*it) << " " << std::get<char>(*it) << std::endl;
     }
 	std::cout << "\n\n";
 }
@@ -39,7 +39,7 @@ int main() {
     dict[1] = 'b';
 
     
-  //  iterate_basic( dict);
-   //  iterate_get( dict);
-    iterate_type( dict);
+   iterate_basic(dict);
+   iterate_get(dict);
+   iterate_type(dict);
 }
