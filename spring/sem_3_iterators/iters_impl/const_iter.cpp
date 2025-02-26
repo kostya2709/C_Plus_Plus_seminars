@@ -12,11 +12,14 @@ public:
     template <bool isConst>
     struct common_iterator {
     private:
-        typename std::conditional<isConst, const T*, T*>::type ptr;
+		
+		using Ptr = std::conditional_t<isConst, const T*, T*>;
+
+		Ptr ptr;
     public:
         common_iterator( T* ptr): ptr( ptr) {}
 
-		common_iterator(const Vector<T>::common_iterator<false>& other) : ptr(ptr) {}
+		common_iterator(const common_iterator<false>& other) : ptr(ptr) {}
 
         typename std::conditional<isConst, const T&, T&>::type operator*() {
             return *ptr;
@@ -30,15 +33,8 @@ public:
             ++ptr;
             return *this;
         }
-
-    };
-
-	/*
-	template<typename Dummy>
-	struct common_iterator<true, Dummy> : common_iterator<tru> {
-		common_iterator(common_iterator<false> other) : ptr(other.ptr) {}
 	};
-*/
+
    
     using iterator = common_iterator<false>;
     using const_iterator = common_iterator<true>;
@@ -60,9 +56,10 @@ int main() {
     
 	auto const_iter = vec.cbegin();
     ++const_iter;
-	// *const_iter = 0;
+//	*const_iter = 0;
 	
-	Vector<int>::const_iterator const_iter2 = iter;
-//	Vector<int>::iterator iter2 = const_iter;
+	Vector<int>::const_iterator const_iter2 = const_iter;
+	
+	Vector<int>::iterator iter2 = const_iter;
 }
 
