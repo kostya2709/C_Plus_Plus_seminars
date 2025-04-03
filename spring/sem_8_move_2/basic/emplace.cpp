@@ -1,0 +1,72 @@
+#include <iostream>
+
+void* operator new(size_t n) {
+	std::cout << "Allocating " << n << " bytes\n";
+	return malloc(n);
+}
+
+void operator delete(void* ptr, size_t n) {
+    free(ptr);
+}
+
+struct Test {
+	int* data_ = nullptr;
+	Test(int x) : data_(new int(x)) {}
+
+	Test(Test& other1, Test&& other2) : data_(new int(*other1.data_)) {
+		std::cout << "Just some tricky Constructor\n";
+	}
+
+	Test(const Test& other) : data_(new int(*other.data_)) { }
+	Test(Test&& other) : data_(other.data_) {
+		other.data_ = nullptr;
+	}
+	Test& operator=(Test&& other) {
+		*data_ = *other.data_;
+		if (&other != this) {
+			other.data_ = nullptr;
+		}
+		return *this;
+	}
+	~Test() {
+		delete data_;
+	}
+};
+
+template <typename T>
+struct Container {
+	alignas(T) std::byte array_[sizeof(T)];
+	bool pushed_{false};
+	
+	void Push(const T& object) {
+		new (array_) T(object);
+		pushed_ = true;
+	}
+
+	void Push(T&& object) {
+		new (array_) T(std::move(object));
+		pushed_ = true;
+	}
+
+	template <typename... Args>
+	void Emplace(const Args&... args) {
+		new (array_) T(args...); // ???
+		pushed_ = true;
+	}
+
+	~Container() {
+		if (pushed_) {
+			reinterpret_cast<T*>(array_)->~T();
+		}
+	}
+
+};
+
+
+int main() {
+	Container<Test> container;
+
+	Test test1(1);
+	Test test2(2);
+	container.Emplace(test1, std::move(test2));
+}
