@@ -7,8 +7,13 @@ struct C : A, B {};
 
 int main() {
     auto c_ptr = std::make_shared<C>();  
-    std::shared_ptr<B> b_ptr(c_ptr, static_cast<B*>(c_ptr.get()));  
+	
+	std::shared_ptr<B> b2(c_ptr);
+
+	std::cout << b2->b << ' ' << b2.get() <<  '\n';
+	
+	std::shared_ptr<B> b_ptr(c_ptr, static_cast<B*>(c_ptr.get()));  
 
 	std::cout << "use_count: " << c_ptr.use_count() << '\n';
-    std::cout << "value: " << b_ptr->b << '\n';
+    std::cout << "value: " << b_ptr->b <<' ' << b_ptr.get() <<  '\n';
 }

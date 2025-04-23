@@ -2,7 +2,7 @@
 #include <memory>
 
 struct Base {
-    ~Base() {
+    virtual ~Base() {
         std::cout << "~Base\n";
     }
 };
