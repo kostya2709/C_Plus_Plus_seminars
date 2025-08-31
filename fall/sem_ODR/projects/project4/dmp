@@ -1,0 +1,87 @@
+
+a.out:     file format elf64-x86-64
+
+SYMBOL TABLE:
+0000000000000318 l    d  .interp	0000000000000000              .interp
+0000000000000338 l    d  .note.gnu.property	0000000000000000              .note.gnu.property
+0000000000000358 l    d  .note.gnu.build-id	0000000000000000              .note.gnu.build-id
+000000000000037c l    d  .note.ABI-tag	0000000000000000              .note.ABI-tag
+00000000000003a0 l    d  .gnu.hash	0000000000000000              .gnu.hash
+00000000000003c8 l    d  .dynsym	0000000000000000              .dynsym
+0000000000000500 l    d  .dynstr	0000000000000000              .dynstr
+000000000000063a l    d  .gnu.version	0000000000000000              .gnu.version
+0000000000000658 l    d  .gnu.version_r	0000000000000000              .gnu.version_r
+00000000000006a8 l    d  .rela.dyn	0000000000000000              .rela.dyn
+00000000000007c8 l    d  .rela.plt	0000000000000000              .rela.plt
+0000000000001000 l    d  .init	0000000000000000              .init
+0000000000001020 l    d  .plt	0000000000000000              .plt
+0000000000001080 l    d  .plt.got	0000000000000000              .plt.got
+0000000000001090 l    d  .plt.sec	0000000000000000              .plt.sec
+00000000000010e0 l    d  .text	0000000000000000              .text
+00000000000013d8 l    d  .fini	0000000000000000              .fini
+0000000000002000 l    d  .rodata	0000000000000000              .rodata
+0000000000002008 l    d  .eh_frame_hdr	0000000000000000              .eh_frame_hdr
+0000000000002080 l    d  .eh_frame	0000000000000000              .eh_frame
+0000000000003d70 l    d  .init_array	0000000000000000              .init_array
+0000000000003d88 l    d  .fini_array	0000000000000000              .fini_array
+0000000000003d90 l    d  .dynamic	0000000000000000              .dynamic
+0000000000003f90 l    d  .got	0000000000000000              .got
+0000000000004000 l    d  .data	0000000000000000              .data
+0000000000004040 l    d  .bss	0000000000000000              .bss
+0000000000000000 l    d  .comment	0000000000000000              .comment
+0000000000000000 l    df *ABS*	0000000000000000              crtstuff.c
+0000000000001110 l     F .text	0000000000000000              deregister_tm_clones
+0000000000001140 l     F .text	0000000000000000              register_tm_clones
+0000000000001180 l     F .text	0000000000000000              __do_global_dtors_aux
+0000000000004150 l     O .bss	0000000000000001              completed.8061
+0000000000003d88 l     O .fini_array	0000000000000000              __do_global_dtors_aux_fini_array_entry
+00000000000011c0 l     F .text	0000000000000000              frame_dummy
+0000000000003d70 l     O .init_array	0000000000000000              __frame_dummy_init_array_entry
+0000000000000000 l    df *ABS*	0000000000000000              lucky.cpp
+0000000000002004 l     O .rodata	0000000000000001              _ZStL19piecewise_construct
+0000000000004151 l     O .bss	0000000000000001              _ZStL8__ioinit
+000000000000120c l     F .text	000000000000004d              _Z41__static_initialization_and_destruction_0ii
+0000000000001259 l     F .text	0000000000000019              _GLOBAL__sub_I__Z5luckyv
+0000000000000000 l    df *ABS*	0000000000000000              main.cpp
+0000000000002005 l     O .rodata	0000000000000001              _ZStL19piecewise_construct
+0000000000004152 l     O .bss	0000000000000001              _ZStL8__ioinit
+00000000000012f2 l     F .text	000000000000004d              _Z41__static_initialization_and_destruction_0ii
+000000000000133f l     F .text	0000000000000019              _GLOBAL__sub_I_main
+0000000000000000 l    df *ABS*	0000000000000000              crtstuff.c
+0000000000002244 l     O .eh_frame	0000000000000000              __FRAME_END__
+0000000000000000 l    df *ABS*	0000000000000000              
+0000000000002008 l       .eh_frame_hdr	0000000000000000              __GNU_EH_FRAME_HDR
+0000000000001000 l     F .init	0000000000000000              _init
+0000000000003d90 l     O .dynamic	0000000000000000              _DYNAMIC
+0000000000003d88 l       .init_array	0000000000000000              __init_array_end
+0000000000003d70 l       .init_array	0000000000000000              __init_array_start
+0000000000003f90 l     O .got	0000000000000000              _GLOBAL_OFFSET_TABLE_
+0000000000004010 g       .data	0000000000000000              _edata
+0000000000004000  w      .data	0000000000000000              data_start
+0000000000002000 g     O .rodata	0000000000000004              _IO_stdin_used
+0000000000000000  w    F *UND*	0000000000000000              __cxa_finalize@@GLIBC_2.2.5
+00000000000012a6 g     F .text	000000000000004c              main
+0000000000004008 g     O .data	0000000000000000              .hidden __dso_handle
+00000000000013d8 g     F .fini	0000000000000000              .hidden _fini
+0000000000000000       F *UND*	0000000000000000              __cxa_atexit@@GLIBC_2.2.5
+00000000000010e0 g     F .text	000000000000002f              _start
+00000000000011c9 g     F .text	0000000000000043              _Z5luckyv
+0000000000000000       F *UND*	0000000000000000              __stack_chk_fail@@GLIBC_2.4
+0000000000004010 g     O .data	0000000000000000              .hidden __TMC_END__
+0000000000000000       F *UND*	0000000000000000              _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_c@@GLIBCXX_3.4
+0000000000001272  w    F .text	0000000000000034              _ZN7Printer5printEi
+0000000000004040 g     O .bss	0000000000000110              _ZSt4cout@@GLIBCXX_3.4
+0000000000004000 g       .data	0000000000000000              __data_start
+0000000000004158 g       .bss	0000000000000000              _end
+0000000000004010 g       .bss	0000000000000000              __bss_start
+0000000000000000       F *UND*	0000000000000000              _ZNSt8ios_base4InitC1Ev@@GLIBCXX_3.4
+0000000000001360 g     F .text	0000000000000065              __libc_csu_init
+0000000000000000       F *UND*	0000000000000000              _ZNSolsEi@@GLIBCXX_3.4
+0000000000000000  w      *UND*	0000000000000000              _ITM_deregisterTMCloneTable
+00000000000013d0 g     F .text	0000000000000005              __libc_csu_fini
+0000000000000000       F *UND*	0000000000000000              __libc_start_main@@GLIBC_2.2.5
+0000000000000000  w      *UND*	0000000000000000              __gmon_start__
+0000000000000000  w      *UND*	0000000000000000              _ITM_registerTMCloneTable
+0000000000000000       F *UND*	0000000000000000              _ZNSt8ios_base4InitD1Ev@@GLIBCXX_3.4
+
+
