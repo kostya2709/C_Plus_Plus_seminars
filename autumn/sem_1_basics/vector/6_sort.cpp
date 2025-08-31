@@ -13,5 +13,10 @@ int main() {
 
 	// std::sort(data.rbegin(), data.rend());
 	// std::ranges::sort(data);
+	
+	/*
+	for (int i : data) {
+		std::cout << i << '\n';
+	}*/
 
 }

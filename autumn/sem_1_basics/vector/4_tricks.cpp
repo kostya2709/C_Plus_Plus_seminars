@@ -25,8 +25,9 @@ int main() {
     }
 
     while (!data.empty()) {
-    	std::cout << data.back(); 
+    	std::cout << data.back() << ' '; 
         data.pop_back();
 	}
 
+	std::cout << std::endl;
 }
