@@ -11,4 +11,4 @@ assemble:
 	g++ -c main.cpp
 
 clean:
-	rm a*
+	rm *.out *.s *.o tmp *.ii

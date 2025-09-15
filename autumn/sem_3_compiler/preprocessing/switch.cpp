@@ -20,7 +20,7 @@ const char* getCapital(Country country) {
 
 	switch(country) {
 
-#define COUNTRY(name, capital, area, population) case name: return #capital;
+#define COUNTRY(name, capital, area, population) case Country::name: return #capital;
 #include "country_info"
 #undef COUNTRY
 		default: return "Not found";

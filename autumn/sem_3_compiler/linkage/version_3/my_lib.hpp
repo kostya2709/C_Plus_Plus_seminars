@@ -1,0 +1,2 @@
+
+void useful_func();
