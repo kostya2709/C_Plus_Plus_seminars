@@ -1,6 +1,5 @@
-
-void useful_func();
-void important_func();
+#include "my_lib.hpp"
+#include "src.hpp"
 
 int main() {
 

@@ -5,9 +5,10 @@ char global_char;
 int main() {
     
 	int local_int = 27;
+	char local_char = 0;
 
 	printf("&global_char = %p;\n"
-           "&local_int   = %p\n", &local_int, &global_char);
+           "&local_int   = %p;\n &local_char = %p;\n", &global_char, &local_int, &local_char);
 
 	int int_val = -1;
 	unsigned int unsigned_val = 1;

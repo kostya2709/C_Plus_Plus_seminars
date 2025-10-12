@@ -4,7 +4,8 @@ void important_func();
 
 int main() {
 
-	useful_func();
+	
+	int x = useful_func();
 
 	important_func();
 

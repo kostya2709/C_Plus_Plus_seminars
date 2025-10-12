@@ -1,8 +1,8 @@
 #include <iostream>
 
 int table[4];
-bool exists_in_table(int v)
-{
+
+bool exists_in_table(int v) {
     for (int i = 0; i <= 4; i++) {
         if (table[i] == v) return true;
     }

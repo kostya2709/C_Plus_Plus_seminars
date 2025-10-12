@@ -1,15 +1,18 @@
 #include <stdio.h>
 
-/*
+
 void receive_array( int input[]) {
 	input++;    
 	printf("size = %lu\n", sizeof( input));
 }
-*/
+
 
 int main() {
 
     int int_array[10] = {};
+	int matrix[10][20];
+	// matrix[3][5] = 0;
+	// *(matrix + 3 * 20 + 5) = 0;
 
     printf("array     = %p\n"
            "&array[0] = %p\n"
@@ -24,9 +27,7 @@ int main() {
    printf("sizeof(str) = %lu\n", sizeof(str));
    printf("sizeof(str_ptr) = %lu\n", sizeof(str_ptr));
 
-
-
-  //  receive_array( int_array);
+	receive_array(int_array);
 
     return 0;
 }

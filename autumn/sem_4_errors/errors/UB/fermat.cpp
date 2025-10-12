@@ -8,7 +8,7 @@ bool fermat()
     for (int a = 1, b = 1, c = 1; true; )
     {
         if (((a * a * a) == ((b * b * b) + (c * c * c)))) {
-			// std::cout << a << ' ' << b << ' ' << c << '\n';
+			std::cout << a << ' ' << b << ' ' << c << '\n';
 		 	return true; // disproved :()
 		}
         a++;

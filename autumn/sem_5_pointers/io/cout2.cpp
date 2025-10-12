@@ -2,13 +2,13 @@
 #include <cstdio>
 
 void test_sync_stdio() {
-    std::ios::sync_with_stdio( false);
+    std::ios::sync_with_stdio(false);
     
 	std::cout << "cout output\n"; // << std::endl;
-    std::printf( "printf output\n");
+    std::printf("printf output\n");
     std::cout << "cout output again\n";
 	
-    std::ios::sync_with_stdio( true);
+    std::ios::sync_with_stdio(true);
 }
 
 void test_cin_tie() {

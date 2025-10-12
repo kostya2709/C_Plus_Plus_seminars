@@ -13,8 +13,8 @@ int pow3( int val)
 int main()
 {
     int test_int = 3;
-    int( *func_ptr)(int);
-    
+    int (*func_ptr)(int);
+
     func_ptr = mul2;
     std::cout << "mul2: " << "val = " << test_int << " -> " << func_ptr( test_int) << std::endl;
     

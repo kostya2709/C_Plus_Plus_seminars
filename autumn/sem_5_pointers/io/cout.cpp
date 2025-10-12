@@ -10,7 +10,8 @@ int main()
 
     std::cout << "???: " << val << '\n';    
    
-    std::cout <<  std::setprecision( 3) << 3.1415926 << std::endl;
+    std::cout <<  std::setprecision(3) << 3.1415926 << std::endl;
+
 
     return 0;
 }

@@ -1,0 +1,28 @@
+
+main.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <_Z11useful_funcv>:
+   0:	f3 0f 1e fa          	endbr64 
+   4:	55                   	push   rbp
+   5:	48 89 e5             	mov    rbp,rsp
+   8:	48 8d 05 00 00 00 00 	lea    rax,[rip+0x0]        # f <_Z11useful_funcv+0xf>
+   f:	48 89 c6             	mov    rsi,rax
+  12:	48 8d 05 00 00 00 00 	lea    rax,[rip+0x0]        # 19 <_Z11useful_funcv+0x19>
+  19:	48 89 c7             	mov    rdi,rax
+  1c:	e8 00 00 00 00       	call   21 <_Z11useful_funcv+0x21>
+  21:	90                   	nop
+  22:	5d                   	pop    rbp
+  23:	c3                   	ret    
+
+0000000000000024 <main>:
+  24:	f3 0f 1e fa          	endbr64 
+  28:	55                   	push   rbp
+  29:	48 89 e5             	mov    rbp,rsp
+  2c:	e8 00 00 00 00       	call   31 <main+0xd>
+  31:	e8 00 00 00 00       	call   36 <main+0x12>
+  36:	b8 00 00 00 00       	mov    eax,0x0
+  3b:	5d                   	pop    rbp
+  3c:	c3                   	ret    

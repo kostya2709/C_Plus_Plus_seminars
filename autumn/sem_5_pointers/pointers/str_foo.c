@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 char* get_str( const char* str) {
-    // char* new_str = (char*)calloc(100, sizeof(char));
-    char new_str[100] = {};
+    // char new_str[100] = {};
     new_str[0] = '!';
     for ( int i = 1; *str; ++i )
     {
@@ -14,7 +13,6 @@ char* get_str( const char* str) {
     
     // free(str_ptr);
     return str_ptr;
-
 }
 
 
@@ -28,6 +26,6 @@ int main() {
     printf("str_one: %s, str_two: %s\n", str_one, str_two);
     printf("str_one_ptr: %p, :%p %d\n", str_one, str_two, str_one == str_two);
 
-    // free( str_one);    
+    //free(str_one);
 	return 0;
 }
