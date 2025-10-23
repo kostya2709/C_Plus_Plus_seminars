@@ -1,7 +1,6 @@
 #include <iostream>
 
-char* get_str( const char* str)
-{
+char* get_str( const char* str) {
     const size_t LEN = 100;
 	char array[LEN] = {};
 	array[-1] = 0;

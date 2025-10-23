@@ -9,5 +9,6 @@ int main() {
     delete[] array;
     delete[] array;    
 
+
     return 0;
 }
